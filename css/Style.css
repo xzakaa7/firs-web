@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron {
+  background-color: #a9a9a9;
+
+  color: white;
+  padding: 60px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  padding: 5px;
+  position: sticky;
+  top: 0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+p {
+  font-size: 1.2em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  padding-inline: 4rem;
+  gap: 2rem;
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+
+  padding: 20px;
+  background-color: #f9f9f9;
+  gap: 1.5rem;
+}
+
+.wisata {
+  flex: 2;
+  margin-right: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+  color: #333;
+}
+
+.article-image {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 5px;
+}
+
+.kuliner {
+  margin-top: 50px;
+
+  flex: 2;
+  margin-right: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+.profile-card {
+  flex: 1;
+  text-align: center;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+aside h2 {
+  color: #333;
+  text-align: center;
+  font-size: 25px;
+}
+
+.aside-image {
+  width: 100%;
+  max-width: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  aside {
+    align-self: stretch;
+  }
+}
